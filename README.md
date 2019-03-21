@@ -997,7 +997,7 @@ plt.xlabel('State')
 
 ## Level-Up!
 ## Create a function (or class) that returns an outline of the schema structure like this: 
-<img src="outline.jpg" width=350>
+<img src="images/outline.jpg" width=350>
 
 Rules:
 * Your outline should follow the numbering outline above (I, A, 1, a, i).
