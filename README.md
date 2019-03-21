@@ -3,7 +3,7 @@
 
 # Introduction
 
-In this lesson, we'll formalize how to explore a JSON file whose structure and schema is unknown to you. This often happens in practice when you are handed a file or stumble upon one with little documentation.
+In this lesson, you'll formalize how to explore a JSON file whose structure and schema is unknown to you. This often happens in practice when you are handed a file or stumble upon one with little documentation.
 
 ## Objectives
 You will be able to:
@@ -41,7 +41,7 @@ Create a DataFrame from the JSON file. Be sure to retrive the column names for t
 
 ## Level-Up!
 ## Create a function (or class) that returns an outline of the schema structure like this: 
-<img src="outline.jpg" width=350>
+<img src="images/outline.jpg" width=350>
 
 Rules:
 * Your outline should follow the numbering outline above (I, A, 1, a, i).
