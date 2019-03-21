@@ -3,7 +3,7 @@
 
 # Introduction
 
-In this lesson, we'll formalize how to explore a JSON file whose structure and schema is unknown to you. This often happens in practice when you are handed a file or stumble upon one with little documentation.
+In this lesson, you'll formalize how to explore a JSON file whose structure and schema is unknown to you. This often happens in practice when you are handed a file or stumble upon one with little documentation.
 
 ## Objectives
 You will be able to:
@@ -767,7 +767,7 @@ view.head()
 
 
 
-Notice we still have some duplicates!
+Notice you still have some duplicates!
 
 
 ```python
@@ -1134,10 +1134,6 @@ print(outline)
                 d. <class 'int'> 
                 e. <class 'str'> 
 
-
-## Level Up JSON Outliner Hints:
-
-Go on to the next section to read more about writing recursive functions and outlining this extended challenge problem!
 
 ## Summary
 
