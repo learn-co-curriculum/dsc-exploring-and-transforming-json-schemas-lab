@@ -20,7 +20,7 @@ Load the data from the file disease_data.json.
 #Your code here 
 ```
 
-## Explore the first and second levels of the schema hierarchy.
+## Explore the first and second levels of the schema hierarchy
 
 
 ```python
@@ -41,7 +41,7 @@ Create a DataFrame from the JSON file. Be sure to retrive the column names for t
 
 ## Level-Up!
 ## Create a function (or class) that returns an outline of the schema structure like this: 
-<img src="images/outline.jpg" width=350>
+<img src="images/outline.jpg" width="350">
 
 Rules:
 * Your outline should follow the numbering outline above (I, A, 1, a, i).
