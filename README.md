@@ -23,7 +23,7 @@ f = open('2016_cdc_data.json')
 data = json.load(f)
 ```
 
-## Explore the first and second levels of the schema hierarchy.
+## Explore the first and second levels of the schema hierarchy
 
 
 ```python
@@ -997,7 +997,7 @@ plt.xlabel('State')
 
 ## Level-Up!
 ## Create a function (or class) that returns an outline of the schema structure like this: 
-<img src="images/outline.jpg" width=350>
+<img src="images/outline.jpg" width="350">
 
 Rules:
 * Your outline should follow the numbering outline above (I, A, 1, a, i).
