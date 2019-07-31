@@ -67,11 +67,6 @@ data.keys()
 
 
 ```python
-#Your code here
-```
-
-
-```python
 # __SOLUTION__ 
 #Check second level A.
 type(data['meta'])
@@ -1030,7 +1025,7 @@ plt.xlabel('State')
 
 
 
-![png](index_files/index_30_1.png)
+![png](index_files/index_29_1.png)
 
 
 ## Level-Up!
