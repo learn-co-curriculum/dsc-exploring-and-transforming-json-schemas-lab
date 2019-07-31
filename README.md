@@ -51,10 +51,6 @@ type(data)
 
 
 
-## Convert to a DataFrame
-
-Create a DataFrame from the JSON file. Be sure to retrive the column names for the dataframe. (Search within the 'meta' key of the master dictionary.) The DataFrame should include all 42 columns.
-
 
 ```python
 # __SOLUTION__ 
@@ -88,9 +84,6 @@ type(data['meta'])
 
 
 
-## Level-Up
-## Create a bar graph of states with the highest asthma rates for adults age 18+
-
 
 ```python
 # __SOLUTION__ 
@@ -104,21 +97,6 @@ data['meta'].keys()
     dict_keys(['view'])
 
 
-
-## Level-Up!
-## Create a function (or class) that returns an outline of the schema structure like this: 
-<img src="images/outline.jpg" width="350">
-
-Rules:
-* Your outline should follow the numbering outline above (I, A, 1, a, i).
-* Your outline should be properly indented! (Four spaces or one tab per indentation level.)
-* Your function goes to at least a depth of 5 (Level-up: create a parameter so that the user can specify this)
-* If an entry is a dictionary, list its keys as the subheadings
-* After listing a key name (where applicable) include a space, a dash and the data type of the entry
-* If an entry is a dict or list put in parentheses how many items are in the entry
-* lists will not have key names for their entries (they're just indexed)
-* For subheadings of a list, state their datatypes. 
-* If a dictionary or list is more then 5 items long, only show the first 5 (we want to limit our previews); make an arbitrary order choice for dictionaries. (Level-up: Parallel to above; allow user to specify number of items to preview for large subheading collections.)
 
 
 ```python
@@ -136,13 +114,6 @@ type(data['data'])
 
 
 ```python
-# Your code here; you will probably want to define subfunctions.
-def print_obj_outline(json_obj):
-    return outline
-```
-
-
-```python
 # __SOLUTION__ 
 #Further details
 len(data['data'])
@@ -154,11 +125,6 @@ len(data['data'])
     60266
 
 
-
-
-```python
-outline = print_obj_outline(data)
-```
 
 
 ```python
@@ -176,52 +142,6 @@ type(data['data'][0])
 
 
 ```python
-print(outline) #Your function should produce the following output for this json object (and work for all json files!)
-```
-
-    I. root - <class 'dict'> (2 items)
-        A. meta <class 'dict'> (1 items)
-            1. view <class 'dict'> (40 items)
-                a. id <class 'str'> 
-                b. name <class 'str'> 
-                c. attribution <class 'str'> 
-                d. attributionLink <class 'str'> 
-                e. averageRating <class 'int'> 
-        B. data <class 'list'> (60266 items)
-            1. <class 'list'> (42 items)
-                a. <class 'int'> 
-                b. <class 'str'> 
-                c. <class 'int'> 
-                d. <class 'int'> 
-                e. <class 'str'> 
-            2. <class 'list'> (42 items)
-                a. <class 'int'> 
-                b. <class 'str'> 
-                c. <class 'int'> 
-                d. <class 'int'> 
-                e. <class 'str'> 
-            3. <class 'list'> (42 items)
-                a. <class 'int'> 
-                b. <class 'str'> 
-                c. <class 'int'> 
-                d. <class 'int'> 
-                e. <class 'str'> 
-            4. <class 'list'> (42 items)
-                a. <class 'int'> 
-                b. <class 'str'> 
-                c. <class 'int'> 
-                d. <class 'int'> 
-                e. <class 'str'> 
-            5. <class 'list'> (42 items)
-                a. <class 'int'> 
-                b. <class 'str'> 
-                c. <class 'int'> 
-                d. <class 'int'> 
-                e. <class 'str'> 
-
-
-
-```python
 # __SOLUTION__ 
 #Extended: Further Third Level Details (these make up the column entries for each row in the next question)
 len(data['data'][0])
@@ -233,10 +153,6 @@ len(data['data'][0])
     42
 
 
-
-## Summary
-
-Well done! In this lab you got some extended practice exploring the structure of JSON files and writing a recursive generalized function for outlining a JSON file's schema! 
 
 
 ```python
@@ -250,6 +166,15 @@ data['data'][0][8]
     '2016'
 
 
+
+## Convert to a DataFrame
+
+Create a DataFrame from the JSON file. Be sure to retrive the column names for the dataframe. (Search within the 'meta' key of the master dictionary.) The DataFrame should include all 42 columns.
+
+
+```python
+#Your code here
+```
 
 
 ```python
@@ -450,6 +375,9 @@ df.head()
 </div>
 
 
+
+## Level-Up
+## Create a bar graph of states with the highest asthma rates for adults age 18+
 
 
 ```python
@@ -1102,8 +1030,30 @@ plt.xlabel('State')
 
 
 
-![png](index_files/index_34_1.png)
+![png](index_files/index_30_1.png)
 
+
+## Level-Up!
+## Create a function (or class) that returns an outline of the schema structure like this: 
+<img src="images/outline.jpg" width="350">
+
+Rules:
+* Your outline should follow the numbering outline above (I, A, 1, a, i).
+* Your outline should be properly indented! (Four spaces or one tab per indentation level.)
+* Your function goes to at least a depth of 5 (Level-up: create a parameter so that the user can specify this)
+* If an entry is a dictionary, list its keys as the subheadings
+* After listing a key name (where applicable) include a space, a dash and the data type of the entry
+* If an entry is a dict or list put in parentheses how many items are in the entry
+* lists will not have key names for their entries (they're just indexed)
+* For subheadings of a list, state their datatypes. 
+* If a dictionary or list is more then 5 items long, only show the first 5 (we want to limit our previews); make an arbitrary order choice for dictionaries. (Level-up: Parallel to above; allow user to specify number of items to preview for large subheading collections.)
+
+
+```python
+# Your code here; you will probably want to define subfunctions.
+def print_obj_outline(json_obj):
+    return outline
+```
 
 
 ```python
@@ -1182,9 +1132,60 @@ def print_obj_outline(obj, cur_printout="", depth=0, exn=0, max_en=5, max_depth=
 
 
 ```python
+outline = print_obj_outline(data)
+```
+
+
+```python
 # __SOLUTION__ 
 outline = print_obj_outline(data)
 ```
+
+
+```python
+print(outline) #Your function should produce the following output for this json object (and work for all json files!)
+```
+
+    I. root - <class 'dict'> (2 items)
+        A. meta <class 'dict'> (1 items)
+            1. view <class 'dict'> (40 items)
+                a. id <class 'str'> 
+                b. name <class 'str'> 
+                c. attribution <class 'str'> 
+                d. attributionLink <class 'str'> 
+                e. averageRating <class 'int'> 
+        B. data <class 'list'> (60266 items)
+            1. <class 'list'> (42 items)
+                a. <class 'int'> 
+                b. <class 'str'> 
+                c. <class 'int'> 
+                d. <class 'int'> 
+                e. <class 'str'> 
+            2. <class 'list'> (42 items)
+                a. <class 'int'> 
+                b. <class 'str'> 
+                c. <class 'int'> 
+                d. <class 'int'> 
+                e. <class 'str'> 
+            3. <class 'list'> (42 items)
+                a. <class 'int'> 
+                b. <class 'str'> 
+                c. <class 'int'> 
+                d. <class 'int'> 
+                e. <class 'str'> 
+            4. <class 'list'> (42 items)
+                a. <class 'int'> 
+                b. <class 'str'> 
+                c. <class 'int'> 
+                d. <class 'int'> 
+                e. <class 'str'> 
+            5. <class 'list'> (42 items)
+                a. <class 'int'> 
+                b. <class 'str'> 
+                c. <class 'int'> 
+                d. <class 'int'> 
+                e. <class 'str'> 
+
 
 
 ```python
@@ -1232,3 +1233,7 @@ print(outline)
                 d. <class 'int'> 
                 e. <class 'str'> 
 
+
+## Summary
+
+Well done! In this lab you got some extended practice exploring the structure of JSON files and writing a recursive generalized function for outlining a JSON file's schema! 
