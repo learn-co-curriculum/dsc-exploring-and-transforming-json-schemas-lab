@@ -27,6 +27,11 @@ Load the data from the file disease_data.json.
 #Your code here
 ```
 
+
+```python
+#Your code here
+```
+
 ## Convert to a DataFrame
 
 Create a DataFrame from the JSON file. Be sure to retrive the column names for the dataframe. (Search within the 'meta' key of the master dictionary.) The DataFrame should include all 42 columns.
