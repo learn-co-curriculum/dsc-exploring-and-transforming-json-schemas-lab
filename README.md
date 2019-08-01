@@ -800,6 +800,12 @@ view.head()
 
 
 ```python
+# __SOLUTION__
+# Notice you still have some duplicates!
+```
+
+
+```python
 # __SOLUTION__ 
 view.DataValueTypeID.value_counts()
 ```
@@ -1025,7 +1031,7 @@ plt.xlabel('State')
 
 
 
-![png](index_files/index_29_1.png)
+![png](index_files/index_30_1.png)
 
 
 ## Level-Up!
