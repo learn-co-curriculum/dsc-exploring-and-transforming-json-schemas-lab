@@ -25,7 +25,7 @@ Load the data from the file disease_data.json.
 # __SOLUTION__ 
 #Your code here 
 import json
-f = open('2016_cdc_data.json')
+f = open('disease_data.json')
 data = json.load(f)
 ```
 
@@ -203,17 +203,17 @@ df.head()
 
 
 <div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
     }
 
     .dataframe tbody tr th {
         vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
     }
 </style>
 <table border="1" class="dataframe">
@@ -385,10 +385,10 @@ df[df.Topic == 'Asthma'].Question.value_counts(normalize=True).cumsum()[:10]
 
 
     Influenza vaccination among noninstitutionalized adults aged >= 65 years with asthma       0.186096
-    Current asthma prevalence among adults aged >= 18 years                                    0.372193
-    Pneumococcal vaccination among noninstitutionalized adults aged 18-64 years with asthma    0.558289
-    Pneumococcal vaccination among noninstitutionalized adults aged >= 65 years with asthma    0.744385
-    Influenza vaccination among noninstitutionalized adults aged 18-64 years with asthma       0.930481
+    Pneumococcal vaccination among noninstitutionalized adults aged >= 65 years with asthma    0.372193
+    Influenza vaccination among noninstitutionalized adults aged 18-64 years with asthma       0.558289
+    Current asthma prevalence among adults aged >= 18 years                                    0.744385
+    Pneumococcal vaccination among noninstitutionalized adults aged 18-64 years with asthma    0.930481
     Asthma prevalence among women aged 18-44 years                                             1.000000
     Name: Question, dtype: float64
 
@@ -407,17 +407,17 @@ view.head()
 
 
 <div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
     }
 
     .dataframe tbody tr th {
         vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
     }
 </style>
 <table border="1" class="dataframe">
@@ -507,17 +507,17 @@ view.sort_values(by='LocationAbbr').head()
 
 
 <div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
     }
 
     .dataframe tbody tr th {
         vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
     }
 </style>
 <table border="1" class="dataframe">
@@ -630,17 +630,17 @@ view.head()
 
 
 <div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
     }
 
     .dataframe tbody tr th {
         vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
     }
 </style>
 <table border="1" class="dataframe">
@@ -831,17 +831,17 @@ view.head()
 
 
 <div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
     }
 
     .dataframe tbody tr th {
         vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
     }
 </style>
 <table border="1" class="dataframe">
@@ -1020,7 +1020,7 @@ plt.xlabel('State')
 
 
 
-    <matplotlib.text.Text at 0x155ec993fd0>
+    Text(0.5, 0, 'State')
 
 
 
@@ -1140,47 +1140,6 @@ outline = print_obj_outline(data)
 ```python
 print(outline) #Your function should produce the following output for this json object (and work for all json files!)
 ```
-
-    I. root - <class 'dict'> (2 items)
-        A. meta <class 'dict'> (1 items)
-            1. view <class 'dict'> (40 items)
-                a. id <class 'str'> 
-                b. name <class 'str'> 
-                c. attribution <class 'str'> 
-                d. attributionLink <class 'str'> 
-                e. averageRating <class 'int'> 
-        B. data <class 'list'> (60266 items)
-            1. <class 'list'> (42 items)
-                a. <class 'int'> 
-                b. <class 'str'> 
-                c. <class 'int'> 
-                d. <class 'int'> 
-                e. <class 'str'> 
-            2. <class 'list'> (42 items)
-                a. <class 'int'> 
-                b. <class 'str'> 
-                c. <class 'int'> 
-                d. <class 'int'> 
-                e. <class 'str'> 
-            3. <class 'list'> (42 items)
-                a. <class 'int'> 
-                b. <class 'str'> 
-                c. <class 'int'> 
-                d. <class 'int'> 
-                e. <class 'str'> 
-            4. <class 'list'> (42 items)
-                a. <class 'int'> 
-                b. <class 'str'> 
-                c. <class 'int'> 
-                d. <class 'int'> 
-                e. <class 'str'> 
-            5. <class 'list'> (42 items)
-                a. <class 'int'> 
-                b. <class 'str'> 
-                c. <class 'int'> 
-                d. <class 'int'> 
-                e. <class 'str'> 
-
 
 
 ```python
