@@ -71,6 +71,47 @@ outline = print_obj_outline(data)
 print(outline) #Your function should produce the following output for this json object (and work for all json files!)
 ```
 
+    I. root - <class 'dict'> (2 items)
+        A. meta <class 'dict'> (1 items)
+            1. view <class 'dict'> (40 items)
+                a. id <class 'str'> 
+                b. name <class 'str'> 
+                c. attribution <class 'str'> 
+                d. attributionLink <class 'str'> 
+                e. averageRating <class 'int'> 
+        B. data <class 'list'> (60266 items)
+            1. <class 'list'> (42 items)
+                a. <class 'int'> 
+                b. <class 'str'> 
+                c. <class 'int'> 
+                d. <class 'int'> 
+                e. <class 'str'> 
+            2. <class 'list'> (42 items)
+                a. <class 'int'> 
+                b. <class 'str'> 
+                c. <class 'int'> 
+                d. <class 'int'> 
+                e. <class 'str'> 
+            3. <class 'list'> (42 items)
+                a. <class 'int'> 
+                b. <class 'str'> 
+                c. <class 'int'> 
+                d. <class 'int'> 
+                e. <class 'str'> 
+            4. <class 'list'> (42 items)
+                a. <class 'int'> 
+                b. <class 'str'> 
+                c. <class 'int'> 
+                d. <class 'int'> 
+                e. <class 'str'> 
+            5. <class 'list'> (42 items)
+                a. <class 'int'> 
+                b. <class 'str'> 
+                c. <class 'int'> 
+                d. <class 'int'> 
+                e. <class 'str'> 
+
+
 ## Summary
 
 Well done! In this lab you got some extended practice exploring the structure of JSON files and writing a recursive generalized function for outlining a JSON file's schema! 
