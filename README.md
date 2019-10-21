@@ -7,13 +7,13 @@ In this lesson, you'll formalize how to explore a JSON file whose structure and 
 
 ## Objectives
 You will be able to:
-* Explore unknown JSON schemas
-* Access and manipulate data inside a JSON file
-* Convert JSON to alternative data formats
+* Use the JSON module to load and parse JSON documents
+* Load and explore unknown JSON schemas
+* Convert JSON to a pandas dataframe
 
 ## Loading the JSON file
 
-Load the data from the file disease_data.json.
+Load the data from the file `disease_data.json`.
 
 
 ```python
