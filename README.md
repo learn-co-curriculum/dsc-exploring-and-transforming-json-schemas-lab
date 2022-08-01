@@ -5,8 +5,10 @@
 In this lab, you'll practice exploring a JSON file whose structure and schema is unknown to you. We will provide you with limited information, and you will explore the dataset to answer the specified question.
 
 ## Objectives
+
 You will be able to:
-* Use the JSON module to load and parse JSON documents
+
+* Use the `json` module to load and parse JSON documents
 * Explore and extract data using unknown JSON schemas
 * Convert JSON to a pandas dataframe
 
@@ -2578,7 +2580,9 @@ ax.set_xlabel('Percent 18+ with Asthma');
 ```
 
 
+    
 ![png](index_files/index_50_0.png)
+    
 
 
 ## Summary
