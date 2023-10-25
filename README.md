@@ -171,4 +171,4 @@ ax.set_xlabel('Percent 18+ with Asthma');
 
 ## Summary
 
-Well done! In this lab you got some extended practice exploring the structure of JSON files and visualizing data!
+In this lab you got some extended practice exploring the structure of JSON files and visualizing data.
